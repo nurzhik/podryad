@@ -1,0 +1,219 @@
+.search-contractor-content {
+	display: flex;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__title {
+		width: 100%;
+		padding-bottom: 0;
+
+		border-bottom: 0;
+
+		@extend .title;
+	}
+}
+
+.filter {
+	box-sizing: border-box;
+	width: 320px;
+	margin-top: 10px;
+	padding: 15px 20px;
+
+	border: 1px solid #c8c8c8;
+
+	font-size: em(14px);
+	&__submit {
+		width: 90px;
+		height: 35px;
+		margin: 10px auto;
+		padding-left: 0;
+
+		border: 0;
+
+		line-height: 1;
+
+		@extend .btn;
+	}
+	&__reset {
+		width: 100%;
+		margin-bottom: 10px;
+
+		text-align: center;
+		text-decoration: underline;
+
+		color: #6a6a6a;
+		border: 0;
+		background: none;
+
+		font-size: em(14px);
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__nofilter {
+		text-align: center;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		a {
+			display: block;
+
+			color: #6a6a6a;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&__item {
+		position: relative;
+
+		padding-left: 21px;
+
+		color: #1884bf;
+		&:hover {
+			cursor: pointer;
+		}
+		&:before {
+			left: 0;
+
+			@include content;
+			@include bg($filter-closed);
+		}
+		&.active {
+			&:before {
+				@include bg($filter-opened);
+			}
+		}
+	}
+	&__select-all {
+		position: absolute;
+		top: 2px;
+		right: 0;
+
+		display: none;
+
+		font-size: em(12px, 14px);
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__list {
+		display: none;
+
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 12px;
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.filter-item {
+	display: block;
+
+	margin-bottom: 5px;
+
+	text-decoration: none;
+
+	color: #6a6a6a;
+	&.active {
+		padding-top: 2px;
+		padding-left: 5px;
+
+		color: #fff;
+		background: $blue;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	input {
+		opacity: 0;
+	}
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.search-contractor-results {
+	width: 871px;
+	margin-top: 10px;
+}
+
+.announce-tender {
+	display: flex;
+
+	padding: 16px  28px 16px 18px;
+
+	background: linear-gradient(to bottom, #1c96c9, #1883bf);
+
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.announce-tender-form {
+	width: 545px;
+	&__input {
+		display: block;
+
+		box-sizing: border-box;
+		width: 100%;
+		padding: 12px;
+
+		color: #6a6a6a;
+		border: 0;
+		box-shadow: inset 1px 1px 3px rgba(0,0,0,.75);
+
+		font-size: em(14px);
+		&--textarea {
+			height: 86px;
+			margin: 12px 0;
+		}
+	}
+	.btn {
+		float: right;
+
+		background: #21aad3;
+	}
+	&__submit {
+		text-transform: uppercase;
+
+		border: 0;
+		background: none;
+	}
+}
+
+.search-contractor-results-list-item {
+	.portfolio-album__count {
+		margin-top: 12px;
+		margin-bottom: 10px;
+
+		color: $blue;
+		span {
+			color: #6a6a6a;
+		}
+	}
+	.contractor-block {
+		box-sizing: border-box;
+		width: 100%;
+		.contractor-block-info {
+			width: 622px;
+			&__rating {
+				justify-content: flex-start;
+				a {
+					margin-right: 15px;
+				}
+			}
+			&__service {
+				margin: 12px 0;
+			}
+		}
+		.contractor-block-images {
+			width: 100%;
+			height: auto;
+			margin-top: 10px;
+		}
+	}
+}

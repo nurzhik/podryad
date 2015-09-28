@@ -1,0 +1,77 @@
+mixin registration-contractor-content()
+	section.registration-contractor-content
+		.registration-contractor-content__title Регистрация подрядчика
+
+		.registration-contractor-content__text Пожалуйста, укажите свои реальные данные, это облегчит взаимодействие между вами и заказчиками
+
+		form(method="" action="").registration-contractor-form
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Фамилия
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Имя
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label  
+				span Отчество
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Контактный телефон
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span E-mail
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Специализации
+				.registration-contractor-form__row
+					a(href="#" title="" data-click="modal" data-item="#specialization").btn.registration-contractor-form__btn Выбрать специализацию
+					em Максимум 10 специализаций
+					.specialization-list-selected
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Город / Край / Посёлок
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Улица / Проезд / Переулок / Дом
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+					em Мы не будем показывать Ваш адрес другим пользователям. Адрес необходим для размещения метки на карте
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Где вы готовы работать?
+				.registration-contractor-form__row
+					select.registration-contractor-form__input
+						option Алмата
+						option Астана
+					em Укажите только те города в которых вы готовы работать.
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Пароль
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+					em Мы не будем показывать Ваш адрес другим пользователям. Адрес необходим для размещения метки на карте
+
+			label.registration-contractor-form__label.registration-contractor-form__label--required 
+				span Повторите пароль
+				.registration-contractor-form__row
+					input(type="text" value="").registration-contractor-form__input
+					em Мы не будем показывать Ваш адрес другим пользователям. Адрес необходим для размещения метки на карте
+
+			label.registration-contractor-form__label.registration-contractor-form__label--license
+				span
+				.registration-contractor-form__row
+					input(type="checkbox" value="") 
+					| Я согласен с условиями пользования сервисом
+
+			input(type="submit" value="Зарегистрироваться").form__submit

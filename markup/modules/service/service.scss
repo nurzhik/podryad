@@ -1,0 +1,76 @@
+.service {
+	display: flex;
+
+	margin-top: 15px;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__title {
+		width: 100%;
+
+		@extend .title;
+	}
+	&__bottom {
+		margin: 25px auto;
+	}
+}
+
+.service-block {
+	width: 190px;
+	padding-top: 35px;
+
+	text-align: center;
+	&:before {
+		position: relative;
+
+		display: block;
+
+		margin: auto;
+
+		content: "";
+	}
+	&--n1 {
+		&:before {
+			margin-bottom: 12px;
+
+			@include bg($service-1);
+		}
+	}
+	&--n2 {
+		&:before {
+			@include bg($service-2);
+		}
+	}
+	&--n3 {
+		&:before {
+			top: -12px;
+
+			@include bg($service-3);
+		}
+	}
+	&--n4 {
+		&:before {
+			top: -5px;
+
+			margin-bottom: -5px;
+
+			@include bg($service-4);
+		}
+	}
+	&__link {
+		text-transform: uppercase;
+
+		color: #6a6a6a;
+
+		font-weight: 700;
+	}
+	&__text {
+		padding-top: 5px;
+
+		color: #b5b5b5;
+
+		font-size: em(14px);
+		line-height: em(14px);
+	}
+}

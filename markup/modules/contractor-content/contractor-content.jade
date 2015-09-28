@@ -1,0 +1,179 @@
+mixin contractor-content()
+	section.contractor-content
+		a(href="#" title="").contractor-back Вернуться к списку подрядчиков
+		.contractor-block
+			.contractor-block-avatar
+				img(src="%=staticPrefix=%images/content/contractor-avatar.jpg" alt="")
+				a(href="#" title="").contractor-block-avatar__btn ПРИГЛАСИТЬ НА ТЕНДЕР
+			.contractor-block-info
+				.contractor-block-info__name ТОО "СтройА",  Астана
+				.contractor-block-info__service Предлагаемые услуги
+					a(href="#" title="" data-show="самые крутые услуги").contractor-block-info-show показать
+				.contractor-block-info__contact.contractor-block-info__contact--phone 
+					a(href="#" title="" data-show="+7 956 123 45 56").contractor-block-info-show показать номер
+				.contractor-block-info__contact.contractor-block-info__contact--email 
+					a(href="#" title="" data-show="podryad@mail.com").contractor-block-info-show показать e-mail
+				.contractor-block-info__contact.contractor-block-info__contact--address 
+					a(href="#" title="" data-show="Казахстан, г. Астана, ул. Набережные Челны - 3").contractor-block-info-show показать адрес
+				.contractor-block-info__contact.contractor-block-info__contact--site 
+					a(href="#" title="" data-show="website.com").contractor-block-info-show показать сайт
+
+				.contractor-block-info__rating
+					a(href="#" title="") Супер 15
+					a(href="#" title="") Хорошо 6
+					a(href="#" title="") Средне 1
+					a(href="#" title="") Так себе 0
+
+			.contractor-block-images
+				- for (var i = 0; i < 10; i++) {
+				a(href="%=staticPrefix=%images/content/contractor-avatar.jpg" title="").swipebox
+					img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+				- }
+
+		.contractor-meta
+			.contractor-meta__baner
+				img(src="%=staticPrefix=%images/content/contractor-baner.jpg" alt="")
+			.contractor-tabs
+				.contractor-tabs-control
+					a(href="#" title="").contractor-tabs-control__item Описание
+					a(href="#" title="").contractor-tabs-control__item Отзывы
+					a(href="#" title="").contractor-tabs-control__item.active Портфолио
+					a(href="#" title="").contractor-tabs-control__item Цены
+					a(href="#" title="").contractor-tabs-control__item Лицензии и сертификаты
+				.contractor-tabs-box
+					.contractor-tabs-box__item
+						.contractor-tabs-description
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+							p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+							p It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					.contractor-tabs-box__item
+						.contractor-tabs-reviews
+							.contractor-tabs-reviews-item
+								.contractor-tabs-reviews-item__img
+									img(src="%=staticPrefix=%images/content/contractor-reviews-avatar.jpg" alt="")
+								.contractor-tabs-reviews-item__content
+									.contractor-tabs-reviews-item__name Азамат Амиров
+									.contractor-tabs-reviews-item__rating.contractor-tabs-reviews-item__rating--like
+									.contractor-tabs-reviews-item__date 15.09.2015
+										span 14:03
+									.contractor-tabs-reviews-item__text
+										p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							.contractor-tabs-reviews-item
+								.contractor-tabs-reviews-item__img
+									img(src="%=staticPrefix=%images/content/contractor-reviews-avatar.jpg" alt="")
+								.contractor-tabs-reviews-item__content
+									.contractor-tabs-reviews-item__name Азамат Амиров
+									.contractor-tabs-reviews-item__rating.contractor-tabs-reviews-item__rating--dislike
+									.contractor-tabs-reviews-item__date 15.09.2015
+										span 14:03
+									.contractor-tabs-reviews-item__text
+										p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+					.contractor-tabs-box__item.active
+						.portfolio
+							.portfolio-sliders
+								.portfolio-slider.active
+									.portfolio-slider-big.slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big.jpg" alt="")
+										- }
+									.portfolio-slider-small.slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small.jpg" alt="")
+										- }
+								.portfolio-slider
+									.portfolio-slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big-2.jpg" alt="")
+										- }
+									.portfolio-slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small-2.jpg" alt="")
+										- }
+								.portfolio-slider
+									.portfolio-slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big.jpg" alt="")
+										- }
+									.portfolio-slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small.jpg" alt="")
+										- }
+								.portfolio-slider
+									.portfolio-slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big.jpg" alt="")
+										- }
+									.portfolio-slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small.jpg" alt="")
+										- }
+								.portfolio-slider
+									.portfolio-slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big.jpg" alt="")
+										- }
+									.portfolio-slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small.jpg" alt="")
+										- }
+								.portfolio-slider
+									.portfolio-slider-big
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-big.jpg" alt="")
+										- }
+									.portfolio-slider-small
+										- for (var i = 0; i < 10; i++) {
+										img(src="%=staticPrefix=%images/content/portfolio-slider-small.jpg" alt="")
+										- }
+							.portfolio-albums
+								.portfolio-album.active
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Кухня - столовая
+									.portfolio-album__count Фото
+										span 10
+								.portfolio-album
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview-2.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Спальня
+									.portfolio-album__count Фото
+										span 10
+								.portfolio-album
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Кухня - столовая
+									.portfolio-album__count Фото
+										span 10
+								.portfolio-album
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Кухня - столовая
+									.portfolio-album__count Фото
+										span 10
+								.portfolio-album
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Кухня - столовая
+									.portfolio-album__count Фото
+										span 10
+								.portfolio-album
+									img(src="%=staticPrefix=%images/content/portfolio-album-preview.jpg" alt="").portfolio-album__preview
+									.portfolio-album__title Кухня - столовая
+									.portfolio-album__count Фото
+										span 10
+
+					.contractor-tabs-box__item
+						table.contractor-tabs-cost
+							tr
+								td №
+								td Название услуги
+								td Примерная стоимость
+							- for (var i = 1; i < 6; i++) {
+							tr 
+								td #{i}
+								td Название услуги
+								td от 90 000 тг.
+							- }
+					.contractor-tabs-box__item
+						.contractor-tabs-license
+							- for (var i = 0; i < 14; i++) {
+							img(src="%=staticPrefix=%images/content/license.jpg" alt="")
+							- }

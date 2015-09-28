@@ -1,0 +1,19 @@
+.seo-text {
+	h1 {
+		padding-bottom: 5px;
+
+		border-bottom: 1px solid #d2d3d5;
+
+		font-weight: normal;
+
+		@extend .title;
+	}
+	p {
+		margin-top: 10px;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		line-height: em(14px, 14px);
+	}
+}

@@ -1,0 +1,226 @@
+mixin modal-enter()
+	.modal.enter#enter
+		.modal__close x
+		.modal__title Войти
+
+		form(method="" action="").form
+			label.form__label E-mail:
+			input(type="email" value="").form__input
+
+			label.form__label Пароль:
+			input(type="password" value="").form__input
+
+			input(type="submit" value="Войти").form__submit
+			a(href="#" title="") Забыли пароль?
+
+mixin modal-registration()
+	.modal.registration#registration
+		.modal__close x
+		.modal__title Регистрация
+
+		a(href="#" title="" data-click="modal" data-item="#registration-customer").registration__item Я — заказчик
+			span Я собираюсь объявить тендер и выбрать подходящего мастера
+		a(href="http://extiser.github.io/podryad/builds/registration-contractor.html" title="").registration__item Я — подрядчик
+			span Я собираюсь разместить информацию о себе и участвовать в тендерах
+
+mixin modal-registration-customer()
+	.modal.registration-customer#registration-customer
+		.modal__close x
+		.modal__title Регистрация заказчика
+
+		form(method="" action="").form
+			label.form__label.form__label--required Фамилия:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Имя:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required E-mail:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Телефон:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Пароль:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--required Повторите пароль:
+			input(type="text" value="").form__input
+
+			label.form__label.form__label--license
+				input(type="checkbox" value="") 
+				| Я согласен с условиями пользования сервисом
+
+			input(type="submit" value="Зарегистрироваться").form__submit
+
+mixin modal-specialization()
+	.modal#specialization.specialization
+		.modal__close x
+		.modal__title Выберите специализацию
+			span.specialization__btn Выбрать
+		.specialization-list
+			.specialization-column
+				.specialization-column__title Ремонт и Отделка
+				.specialization-item
+					.specialization-item__title Отделочные работы
+					a(href='#', title='') Косметический ремонт 
+					a(href='#', title='') Малярные, штукатурные работы
+					a(href='#', title='') Монтаж потолков (французские, натяжные, 3D)
+					a(href='#', title='') Поклейка обоев
+					a(href='#', title='') Укладка и ремонт паркета, ламината
+					a(href='#', title='') Укладка линолеума, ковролина
+					a(href='#', title='') Укладка плитки, мозаики
+					a(href='#', title='') Изготовление и монтаж лепнины
+					a(href='#', title='') Художественная роспись
+					a(href='#', title='') Отделка балконов
+					a(href='#', title='') Фотообои
+					a(href='#', title='') Стяжка выравнивание полов
+					a(href='#', title='') Монтаж гипсокартона 
+				.specialization-item
+					.specialization-item__title Ремонтные работы
+					a(href='#', title='') Ремонт квартиры под ключ
+					a(href='#', title='') Ремонт кухни
+					a(href='#', title='') Ремонт ванной, туалета
+					a(href='#', title='') Ремонт офиса
+					a(href='#', title='') Ремонт магазина
+					a(href='#', title='') Дизайн квартир
+					a(href='#', title='') Возведение стен и перегородок
+					a(href='#', title='') Установка пластиковых окон
+					a(href='#', title='') Установка дверей
+					a(href='#', title='') 3D полы
+					a(href='#', title='') Изготовление лестниц
+					a(href='#', title='') Кладка печей и каминов
+					a(href='#', title='') Отделка домов, коттеджей
+					a(href='#', title='') Фасадная отделка
+				.specialization-item
+					.specialization-item__title Инженерно-монтажные работы
+					a(href='#', title='') Электромонтажные работы
+					a(href='#', title='') Сантехнические работы
+					a(href='#', title='') Монтаж трубопроводов
+					a(href='#', title='') Отопление и водоснабжение
+					a(href='#', title='') Монтаж теплового пола
+					a(href='#', title='') Монтаж систем видеонаблюдения и охраны
+					a(href='#', title='') Монтаж систем пожарной автоматики
+					a(href='#', title='') Монтаж канализации
+					a(href='#', title='') Монтаж вентиляции
+					a(href='#', title='') Установка кондиционеров
+					a(href='#', title='') Установка антенн, подключение телефона, интернета
+					a(href='#', title='') Установка водоочистных фильтров
+					a(href='#', title='') Установка газо-водо-теплосчетчиков
+					a(href='#', title='') Установка систем «Умный дом»
+					a(href='#', title='') Газификация
+					a(href='#', title='') Монтаж изоляции
+				.specialization-item
+					.specialization-item__title Интерьер и дизайн
+					a(href='#', title='') Дизайн интерьера
+					a(href='#', title='') Жалюзи
+					a(href='#', title='') Пошив штор
+					a(href='#', title='') Текстильный дизайн
+					a(href='#', title='') Фотодизайн 
+					a(href='#', title='') Художественная роспись
+					a(href='#', title='') Изготовление мебели на заказ
+					a(href='#', title='') Перетяжка, реставрация мебели
+					a(href='#', title='') Художественная ковка и литьё
+					a(href='#', title='') Работы по дереву
+					a(href='#', title='') Витражи 
+				.specialization-item
+					.specialization-item__title Мелкие бытовые услуги
+					a(href='#', title='') «Муж в аренду»
+					a(href='#', title='') Ремонт, регулировка окон
+					a(href='#', title='') Подключение и ремонт бытовой техники
+					a(href='#', title='') Реставрация ванн 
+					a(href='#', title='') Установка, замена замков
+					a(href='#', title='') Монтаж телевизоров
+				.specialization-item
+					.specialization-item__title Транспортные услуги
+					a(href='#', title='') Доставка, подъем стройматериалов
+					a(href='#', title='') Помощь при переезде
+					a(href='#', title='') Вывоз мусора, грунта, снега
+					a(href='#', title='') Услуги грузчиков
+				.specialization-item
+					.specialization-item__title Дополнительные услуги
+					a(href='#', title='') Перепланировка и согласование
+					a(href='#', title='') Аренда строительного оборудования
+					a(href='#', title='') Сборка, разборка мебели
+					a(href='#', title='') Плотницкие работы столярные работы
+					a(href='#', title='') Клининг 
+					a(href='#', title='') Подбор стройматериалов
+					a(href='#', title='') Заказ 3D панорам для рекламы
+				.specialization-item
+					.specialization-item__title Услуги специалистов
+					a(href='#', title='') Услуги сантехника
+					a(href='#', title='') Услуги электрика
+					a(href='#', title='') Услуги газовика
+			.specialization-column
+				.specialization-column__title Строительство 
+				.specialization-item
+					.specialization-item__title Архитектура, проектирование и дизайн
+					a(href='#', title='') Проектирование частных домов, коттеджей
+					a(href='#', title='') Проектирование жилых домов
+					a(href='#', title='') Проектирование коммерческих объектов
+					a(href='#', title='') Промышленное проектирование
+					a(href='#', title='') Готовые проекты
+					a(href='#', title='') Проектирование инженерных сетей
+					a(href='#', title='') Проектирование инженерных систем
+					a(href='#', title='') Архитектурный дизайн
+					a(href='#', title='') Ландшафтное проектирование и дизайн
+					a(href='#', title='') Технадзор
+					a(href='#', title='') Сметные работы
+					a(href='#', title='') Геодезические работы
+				.specialization-item
+					.specialization-item__title Строительно-монтажные работы 
+					a(href='#', title='') Строительство домов, коттеджей
+					a(href='#', title='') Строительство бань и саун
+					a(href='#', title='') Строительство заборов
+					a(href='#', title='') Строительство туалетов
+					a(href='#', title='') Строительство беседок
+					a(href='#', title='') Строительство веранд
+					a(href='#', title='') Строительство гаражей
+					a(href='#', title='') Строительство теплиц
+					a(href='#', title='') Строительство срубов
+					a(href='#', title='') Быстровозводимые дома
+					a(href='#', title='') Земляные работы
+					a(href='#', title='') Строительство фундамента
+					a(href='#', title='') Бетонные работы
+					a(href='#', title='') Строительство стен и перегородок
+					a(href='#', title='') Кровельные работы
+					a(href='#', title='') Изоляционные работы
+					a(href='#', title='') Фасадные работы
+					a(href='#', title='') Услуги каменщиков 
+					a(href='#', title='') Снос зданий, демонтаж
+					a(href='#', title='') Рольставни, роллеты, секционные ворота
+					a(href='#', title='') Изготовление лестниц
+					a(href='#', title='') Бурение скважин
+					a(href='#', title='') Дренаж
+					a(href='#', title='') Изготовление ворот
+					a(href='#', title='') Подбор и установка насосов
+				.specialization-item
+					.specialization-item__title Промышленное строительство
+					a(href='#', title='') Строительство дорог
+					a(href='#', title='') Строительство трубопроводов
+					a(href='#', title='') Строительство складов
+					a(href='#', title='') Устройство промышленных полов
+					a(href='#', title='') Сварочные работы
+					a(href='#', title='') Изготовление и монтаж металлоконструкций 
+					a(href='#', title='') Витражное, промышленное остекление
+					a(href='#', title='') Монтаж промышленных инженерных сетей
+					a(href='#', title='') Монтаж промышленных инженерных систем
+					a(href='#', title='') Альтернативные источники энергии
+				.specialization-item
+					.specialization-item__title Благоустройство территорий
+					a(href='#', title='') Дорожные работы
+					a(href='#', title='') Озеленение
+					a(href='#', title='') Искусственные водоёмы и пруды
+					a(href='#', title='') Строительство фонтанов
+					a(href='#', title='') Наружное освещение
+					a(href='#', title='') Укладка тротуарной плитки
+					a(href='#', title='') Строительство бассейнов
+					a(href='#', title='') Работы по мрамору
+				.specialization-item
+					.specialization-item__title Дополнительные услуги
+					a(href='#', title='') Высотные работы
+					a(href='#', title='') Аренда строительной техники
+					a(href='#', title='') Вывоз мусора и грунта
+					a(href='#', title='') Доставка стройматериалов
+					a(href='#', title='') Услуги грузчиков
+					a(href='#', title='') Газонокосильщик 

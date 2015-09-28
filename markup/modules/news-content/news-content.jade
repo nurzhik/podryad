@@ -1,0 +1,10 @@
+mixin news-content()
+	section.news-content
+		.news-content__title НОВОСТИ
+
+		- for (var i = 0; i < 6; i++) {
+		.news-content-item
+			img(src="%=staticPrefix=%images/content/news-list.jpg" alt="")
+			p Звезды кино, музыки и спорта поздравили казахстанцев с 550-летием Казахского ханства
+			span 11.09.2015
+		- }

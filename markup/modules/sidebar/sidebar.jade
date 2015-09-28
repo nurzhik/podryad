@@ -1,0 +1,17 @@
+mixin sidebar()
+	aside.sidebar
+
+		.sidebar-news
+			.sidebar-news__title Новости
+			- for (var i = 0; i < 5; i++) {
+			.sidebar-news-block
+				.sidebar-news-block__img
+					img(src="%=staticPrefix=%images/content/sidebar-news.jpg" alt="")
+				.sidebar-news-block__content
+					a(href="#" title="").sidebar-news-block__link Название новости
+					p.sidebar-news-block__text Текст новости, в общем тут пока что рыбный текст, но в идеале любая информация, новость, которая должна тут быть... В общем я только дизайнер :[ так что хз что тут должно быть, но наверное что-то про ремонт или рабочих, или еще чего...
+			- }
+
+
+		.sidebar-vk
+			img(src="%=staticPrefix=%images/content/vk.jpg" alt="")

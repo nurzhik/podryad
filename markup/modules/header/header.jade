@@ -1,0 +1,32 @@
+mixin header(pageClass)
+	- if (pageClass == undefined) pageClass = ''
+	header.header(class="#{pageClass}")
+		.header__wrapper
+			a(href="#" title="").header__logo
+
+			.header__content
+				.header-tender
+					a(href="#" title="").btn.btn--tender Объявить тендер
+					.header-tender__text 
+						span 20 городов
+						span 354 подрядчика
+						span 231 тендер
+
+				.header-login
+					a(href="#" title="" data-click="modal" data-item="#enter") Вход 
+					span / 
+					a(href="#" title="" data-click="modal" data-item="#registration") Регистрация
+
+				+top-menu()
+
+				.header-city
+					.header-city__title ВЫБЕРИТЕ ГОРОД:
+					.header-city-select
+						.header-city-select__current Астана
+						.header-city-select__list
+							.header-city-select__option Алматы
+							.header-city-select__option Караганда
+							.header-city-select__option Петровавловск
+							.header-city-select__option Усть-Каменогорск
+							.header-city-select__option Костанай
+					input(type="hidden" value="").header-city-select__input

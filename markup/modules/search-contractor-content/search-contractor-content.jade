@@ -1,0 +1,156 @@
+mixin search-contractor-content()
+	section.search-contractor-content
+		.search-contractor-content__title Фильтр
+		form(method="" action="").filter
+			.filter__item 
+				.filter__title Отделочные работы
+				.filter__select-all Выбрать все
+				.filter__list
+					.filter-item Косметический ремонт 
+						input(type="checkbox")
+					.filter-item Малярные, штукатурные работы
+						input(type="checkbox")
+					.filter-item Монтаж потолков (французские, натяжные, 3D)
+						input(type="checkbox")
+					.filter-item Поклейка обоев
+						input(type="checkbox")
+					.filter-item Укладка и ремонт паркета, ламината
+						input(type="checkbox")
+					.filter-item Укладка линолеума, ковролина
+						input(type="checkbox")
+					.filter-item Укладка плитки, мозаики
+						input(type="checkbox")
+					.filter-item Изготовление и монтаж лепнины
+						input(type="checkbox")
+					.filter-item Художественная роспись
+						input(type="checkbox")
+					.filter-item Отделка балконов
+						input(type="checkbox")
+					.filter-item Фотообои
+						input(type="checkbox")
+					.filter-item Стяжка выравнивание полов
+						input(type="checkbox")
+					.filter-item Монтаж гипсокартона 
+						input(type="checkbox")
+			.filter__item 
+				.filter__title Ремонтные работы
+				.filter__select-all Выбрать все
+				.filter__list
+					.filter-item Ремонт квартиры под ключ
+						input(type="checkbox")
+					.filter-item Ремонт кухни
+						input(type="checkbox")
+					.filter-item Ремонт ванной, туалета
+						input(type="checkbox")
+					.filter-item Ремонт офиса
+						input(type="checkbox")
+					.filter-item Ремонт магазина
+						input(type="checkbox")
+					.filter-item Дизайн квартир
+						input(type="checkbox")
+					.filter-item Возведение стен и перегородок
+						input(type="checkbox")
+					.filter-item Установка пластиковых окон
+						input(type="checkbox")
+					.filter-item Установка дверей
+						input(type="checkbox")
+					.filter-item 3D полы
+						input(type="checkbox")
+					.filter-item Изготовление лестниц
+						input(type="checkbox")
+					.filter-item Кладка печей и каминов
+						input(type="checkbox")
+					.filter-item Отделка домов, коттеджей
+						input(type="checkbox")
+					.filter-item Фасадная отделка
+						input(type="checkbox")
+			input(type="submit" value="Найти").filter__submit
+			input(type="reset" value="Сбросить фильтр").filter__reset
+			.filter__nofilter Не нашли подходящий фильтр?
+				a(href="#" title="") Предложите его нам
+		
+		.search-contractor-results
+			.announce-tender
+				.announce-tender__baner
+					img(src="%=staticPrefix=%images/content/announce-tender-baner.jpg" alt="")
+				form(method="" action="").announce-tender-form
+					input(type="text" value="" placeholder="Укажите название (Например: Нужно сделать теплые полы 80 кв.м.)").announce-tender-form__input
+					textarea(placeholder="Перечень работ (опишите максимально подробно: перечень работ, площадь помещений, сроки выполнения, требования к подрядчикам и т. д.)").announce-tender-form__input.announce-tender-form__input--textarea
+					.btn.btn--tender
+						input(type="submit" value="Объявить тендер").announce-tender-form__submit
+
+			.search-contractor-results-list
+				
+				.search-contractor-results-list-item
+					
+					.contractor-block
+						.contractor-block-avatar
+							img(src="%=staticPrefix=%images/content/contractor-avatar-big.jpg" alt="")
+							a(href="#" title="").contractor-block-avatar__btn ПРИГЛАСИТЬ НА ТЕНДЕР
+						.contractor-block-info
+							.contractor-block-info__name ТОО "СтройА",  Астана
+							.contractor-block-info__service Предлагаемые услуги
+								a(href="#" title="" data-show="самые крутые услуги").contractor-block-info-show показать
+
+							.contractor-block-info__rating
+								a(href="#" title="") Супер 15
+								a(href="#" title="") Хорошо 6
+								a(href="#" title="") Средне 1
+								a(href="#" title="") Так себе 0
+							
+							.portfolio-album__count Фото
+								span 10
+							
+							.contractor-block-images
+								- for (var i = 0; i < 6; i++) {
+								a(href="#" title="")
+									img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+								- }
+
+					.contractor-block
+						.contractor-block-avatar
+							img(src="%=staticPrefix=%images/content/contractor-avatar-big.jpg" alt="")
+							a(href="#" title="").contractor-block-avatar__btn ПРИГЛАСИТЬ НА ТЕНДЕР
+						.contractor-block-info
+							.contractor-block-info__name ТОО "СтройА",  Астана
+							.contractor-block-info__service Предлагаемые услуги
+								a(href="#" title="" data-show="самые крутые услуги").contractor-block-info-show показать
+
+							.contractor-block-info__rating
+								a(href="#" title="") Супер 15
+								a(href="#" title="") Хорошо 6
+								a(href="#" title="") Средне 1
+								a(href="#" title="") Так себе 0
+							
+							.portfolio-album__count Фото
+								span 10
+							
+							.contractor-block-images
+								- for (var i = 0; i < 6; i++) {
+								a(href="#" title="")
+									img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+								- }
+
+					.contractor-block
+						.contractor-block-avatar
+							img(src="%=staticPrefix=%images/content/contractor-avatar-big.jpg" alt="")
+							a(href="#" title="").contractor-block-avatar__btn ПРИГЛАСИТЬ НА ТЕНДЕР
+						.contractor-block-info
+							.contractor-block-info__name ТОО "СтройА",  Астана
+							.contractor-block-info__service Предлагаемые услуги
+								a(href="#" title="" data-show="самые крутые услуги").contractor-block-info-show показать
+
+							.contractor-block-info__rating
+								a(href="#" title="") Супер 15
+								a(href="#" title="") Хорошо 6
+								a(href="#" title="") Средне 1
+								a(href="#" title="") Так себе 0
+							
+							.portfolio-album__count Фото
+								span 10
+							
+							.contractor-block-images
+								- for (var i = 0; i < 6; i++) {
+								a(href="#" title="")
+									img(src="%=staticPrefix=%images/content/contractor-images.jpg" alt="")
+								- }

@@ -1,0 +1,87 @@
+.top-menu {
+	display: flex;
+
+	width: 75%;
+	margin-top: 46px;
+
+	align-items: flex-start;
+	justify-content: space-between;
+	&__item {
+		position: relative;
+
+		padding-left: 16px;
+		&:before {
+			left: 0;
+
+			@include bg($menu);
+			@include content;
+		}
+		span {
+			display: block;
+
+			width: 90%;
+			margin-top: 8px;
+
+			color: #b5b5b5;
+
+			font-size: em(12px);
+			line-height: em(12px, 12px);
+		}
+		&:hover {
+			&:before {
+				@include bg($menu-active);
+			}
+			span {
+				color: #6a6a6a;
+			}
+			.top-menu-inside {
+				display: block;
+			}
+		}
+	}
+	&__link {
+		display: block;
+
+		margin-top: -3px;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.top-menu-inside {
+	position: absolute;
+	z-index: 99;
+	top: 22px;
+
+	display: none;
+
+	padding-top: 18px;
+	padding-right: 14px;
+	padding-bottom: 18px;
+	padding-left: 14px;
+
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	background: #fcfafb;
+	&:before {
+		top: -8px;
+
+		@include bg($drop-menu);
+		@include content;
+	}
+	&__link {
+		display: block;
+
+		color: #6a6a6a;
+
+		font-size: em(14px);
+		&:hover {
+			color: $blue;
+		}
+	}
+}

@@ -1,0 +1,112 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.btn {
+	position: relative;
+
+	display: block;
+
+	box-sizing: border-box;
+	width: 180px;
+	height: 44px;
+	padding-left: 56px;
+
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: $yellow;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, #1c98ca 0%, #1882be 100%);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+	text-shadow: 0 1px 0 rgba(0,0,0,.6);
+
+	font-family: "ReformaGroteskDemiC";
+	font-size: em(18px);
+	line-height: 44px;
+	&:before {
+		left: 0;
+
+		@include content;
+	}
+	&--tender {
+		&:before {
+			@include bg($btn-tender);
+		}
+	}
+	&--search {
+		width: 230px;
+		&:before {
+			@include bg($btn-search);
+		}
+	}
+}
+
+.form {
+	margin-top: 15px;
+	&__label {
+		display: block;
+
+		color: #444;
+
+		font-size: em(14px);
+		&--required {
+			&:after {
+				padding-left: 3px;
+
+				content: "*";
+
+				color: $blue;
+
+				font-size: em(12px);
+			}
+		}
+		&--license {
+			margin-bottom: 10px;
+			input {
+				margin-right: 5px;
+			}
+		}
+	}
+	&__input {
+		box-sizing: border-box;
+		width: 100%;
+		height: 34px;
+		margin-top: 5px;
+		margin-bottom: 15px;
+		padding-left: 5px;
+		&--inside {
+			width: 450px;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	&__submit {
+		margin: auto;
+		padding: 0;
+
+		text-align: center;
+
+		border: 0;
+
+		font-size: em(23px);
+
+		@extend .btn;
+	}
+	a {
+		display: block;
+
+		margin-top: 10px;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: $blue;
+
+		font-weight: 700;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
