@@ -85,7 +85,13 @@
         </label>
         <label class="registration-contractor-form__label"> <span>Прикрепить файлы</span>
           <div class="registration-contractor-form__row">
-			<input type="file"/>
+			<div class="type_file">
+				<div class="form-group field-reviews-file">
+					<input type="hidden"  value=""><input type="file"   onchange="document.getElementById(&quot;fileName&quot;).value=this.value"><div class="help-block"></div>
+				</div>		
+				<div class="fonTypeFile"></div>
+					<input type="text" class="inputFileVal" placeholder="выберите файл" readonly="readonly" id="fileName">
+			</div>
           </div>
         </label>
         <label class="registration-contractor-form__label registration-contractor-form__label--required"> <span>Контактный телефон</span>
@@ -177,6 +183,9 @@
     <form method="" action="" class="form">
       <label class="form__label">E-mail:</label>
       <input type="email" value="" class="form__input">
+	  <div class="text_restore_password">	
+		<p> Для восстановление  пароля напишите свой E-mail</p>
+	  </div>
 	    <input type="submit" value="Отправить" class="form__submit">
     </form>
   </div>
