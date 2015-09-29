@@ -360,3 +360,16 @@
     font-size: 1.2em;
 }
 /*obiavit tender end*/
+/*404*/
+.error {
+    margin: 0 auto;
+    text-align: center;
+}
+.error p {
+    color: #6a6a6a;
+    font-size: 1.2em;
+}
+.error p a {
+    color: #6a6a6a;
+}
+/*end*/
