@@ -13,7 +13,8 @@ $(document).ready(function () {
         $('.mask, .modal__close, .modal, body').removeClass('active');
     });
     $('.specialization-item a').click(function () {
-        var countSpec = $(this).data('spec');
+        var countSpec = $(this).data('type');
+        console.log(countSpec);
         var equallySpec = 10;
         if ($(this).hasClass('foo')) {
             alert('Нельзя выбирать больше 10 специализаций!');

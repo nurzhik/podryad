@@ -23,7 +23,7 @@ var tarsConfig = {
      * Use linting and hinting of js-files
      * @type {Boolean}
      */
-    useJsLintAndHint: true,
+    useJsLintAndHint: false,
 
     /**
      * Path-strings to js-files, which have to be included before modules' js-files

@@ -1,0 +1,101 @@
+.tenders {
+	&__name {
+		text-align: center;
+
+		color: #6a6a6a;
+
+		font-size: em(16px);
+		font-weight: 700;
+	}
+	&__text {
+		width: 100%;
+		margin-top: 10px;
+
+		color: #5f5f5f;
+
+		font-size: em(14px);
+	}
+}
+
+.tenders-info {
+	margin-top: 15px;
+	&__time {
+		display: inline-block;
+
+		color: #5f5f5f;
+
+		font-size: em(14px);
+		span {
+			padding-right: 35px;
+
+			font-size: em(16px, 14px);
+			font-weight: 700;
+		}
+	}
+	&__budget {
+		position: relative;
+
+		display: inline-block;
+
+		margin-left: 50px;
+		padding-left: 34px;
+
+		color: #5f5f5f;
+
+		font-size: em(14px);
+		span {
+			padding-right: 35px;
+
+			font-size: em(16px, 14px);
+			font-weight: 700;
+		}
+		&:before {
+			top: 0;
+			left: 0;
+
+			@include bg($budget);
+			@include content;
+		}
+	}
+}
+
+.filter-cost {
+	margin-top: 15px;
+	&__title {
+		font-size: em(18px);
+		color: #666666;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	&__line {
+		margin-bottom: 25px;
+		.noUi-handle {
+		}
+		.noUi-handle-lower {
+			@include bg($cost-line-left);
+			
+		}
+		.noUi-handle-upper {
+			@include bg($cost-line-right);
+		}
+	}
+}
+
+.filter-cost-value {
+	margin-bottom: 25px;
+	span {
+		font-size: em(14px);
+		color: #6a6a6a;
+		padding-left: 3px;
+	}
+	&__input {
+		height: 40px;
+		box-shadow: inset 1px 1px 1px rgba(0,0,0,.1);
+		font-size: em(18px);
+		color: #666;
+		padding-left: 10px;
+		width: 130px;
+		box-sizing: border-box;
+		position: relative;
+	}
+}

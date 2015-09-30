@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"e",
+				"equallySpec"
+			],
+			[
+				"cou",
+				"countSpec"
+			],
+			[
 				"ma",
 				"margin-top"
 			],
@@ -506,51 +514,11 @@
 			[
 				"scr",
 				"scrollTop	.scrollTop()"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"mrg",
-				"margin-right"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/pages/search-contractor.jade",
-			"settings":
-			{
-				"buffer_size": 455,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/contractor-content/contractor-content.jade",
-			"settings":
-			{
-				"buffer_size": 9897,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/search-contractor-content/search-contractor-content.scss",
-			"settings":
-			{
-				"buffer_size": 2961,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/modules/search-contractor-content/filter.js",
-			"settings":
-			{
-				"buffer_size": 1437,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -625,14 +593,19 @@
 	[
 		"/Users/extiser/git/podryad/markup",
 		"/Users/extiser/git/podryad/markup/modules",
-		"/Users/extiser/git/podryad/markup/modules/contractor-content",
-		"/Users/extiser/git/podryad/markup/modules/search-contractor-content",
+		"/Users/extiser/git/podryad/markup/modules/modals",
 		"/Users/extiser/git/podryad/markup/pages",
 		"/Users/extiser/git/podryad/markup/static",
 		"/Users/extiser/git/podryad/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/podryad/markup/static/scss/nur.scss",
+		"/Users/extiser/git/podryad/markup/modules/modals/modals.js",
+		"/Users/extiser/git/podryad/nurzhik/obiavit_tender.html",
+		"/Users/extiser/git/podryad/markup/modules/search-contractor-content/filter.js",
+		"/Users/extiser/git/podryad/markup/modules/search-contractor-content/search-contractor-content.scss",
+		"/Users/extiser/git/podryad/markup/pages/search-contractor.jade",
 		"/Users/extiser/git/podryad/markup/modules/search-contractor-content/search-contractor-content.jade",
 		"/Users/extiser/git/podryad/markup/modules/include/include.jade",
 		"/Users/extiser/git/podryad/markup/modules/header/header.jade",
@@ -658,7 +631,6 @@
 		"/Users/extiser/git/podryad/markup/modules/seo-text/seo-text.scss",
 		"/Users/extiser/git/podryad/markup/modules/service/service.scss",
 		"/Users/extiser/git/podryad/markup/static/scss/common.scss",
-		"/Users/extiser/git/podryad/markup/modules/modals/modals.js",
 		"/Users/extiser/git/podryad/markup/modules/registration-contractor-content/registration-contractor-content.jade",
 		"/Users/extiser/git/podryad/markup/modules/registration-contractor-content/registration-contractor-content.scss",
 		"/Users/extiser/git/podryad/markup/modules/modals/modals.scss",
@@ -755,12 +727,7 @@
 		"/Users/extiser/git/amkodor/markup/modules/contact-content/contact-content.jade",
 		"/Users/extiser/git/amkodor/markup/links.txt",
 		"/Users/extiser/git/amkodor/markup/pages/service.jade",
-		"/Users/extiser/git/amkodor/markup/modules/service-content/service-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/about-content/about-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/cart-content/cart-content.jade",
-		"/Users/extiser/git/amkodor/markup/modules/cart-content/cart-content.scss",
-		"/Users/extiser/git/amkodor/markup/pages/cart.jade",
-		"/Users/extiser/git/amkodor/markup/pages/sertificate.jade"
+		"/Users/extiser/git/amkodor/markup/modules/service-content/service-content.jade"
 	],
 	"find":
 	{
@@ -1052,130 +1019,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/pages/search-contractor.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 455,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								417,
-								442
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "markup/modules/contractor-content/contractor-content.jade",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 9897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1821,
-								1821
-							]
-						],
-						"settings":
-						{
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 139.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "markup/modules/search-contractor-content/search-contractor-content.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2961,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2961
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2609.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "markup/modules/search-contractor-content/filter.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/itg.dark.tmTheme",
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
