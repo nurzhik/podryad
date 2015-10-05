@@ -131,37 +131,59 @@ $(document).ready(function () {
         } else {
             $('.registration-contractor-form__btn').html('Выбрать специализацию');
         }
+        var model = $(this).data("model");
+        $(model + '-specialization').remove();
+        var name = model == 'Tender' ? '[specializationId]' : '[specialization][]';
         item.each(function (index, element) {
             $('.specialization-list-selected').append('<div class="specialization-list-selected__item">' + $(element).html() + '</div>');
+            $("<input>", {
+                'type':'hidden',
+                'class':model+'-specialization',
+                'name':model+name,
+                'value':$(element).data('id')
+            }).appendTo(".specialization-list-selected");
         });
     });
 });
-var slider = document.getElementById('cost-line');
-noUiSlider.create(slider, {
-    start: [0, 999999999],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 999999999
-    }
-});
 
-var valueMin = document.getElementById('cost-line-value-min'),
+
+var slider = document.getElementById('cost-line');
+var priceMinElement = document.getElementById('cost-line-min'),
+    priceMaxElement = document.getElementById('cost-line-max'),
+    valueMin = document.getElementById('cost-line-value-min'),
     valueMax = document.getElementById('cost-line-value-max');
 
-// When the slider value changes, update the input and span
-slider.noUiSlider.on('update', function (values, handle) {
-    if (handle) {
-        valueMin.value = values[handle];
-    } else {
-        valueMax.value = values[handle];
-    }
-});
+var priceMin = parseInt($(priceMinElement).val());
+var priceMax = parseInt($(priceMaxElement).val());
+var numberMin = parseInt($(valueMin).val());
+var numberMax = parseInt($(valueMax).val());
+if(slider)
+{
+    noUiSlider.create(slider, {
+        start: [numberMin, numberMax],
+        connect: true,
+        range: {
+            'min': priceMin,
+            'max': priceMax
+        }
+    });
 
-// // When the input changes, set the slider value
-// valueInput.addEventListener('change', function () {
-//     slider.noUiSlider.set([null, this.value]);
-// });
+
+// When the slider value changes, update the input and span
+    slider.noUiSlider.on('update', function (values, handle) {
+        if (handle) {
+            valueMin.value = values[handle];
+        } else {
+            valueMax.value = values[handle];
+        }
+    });
+}
+
+
+    //// When the input changes, set the slider value
+    //valueInput.addEventListener('change', function () {
+    //     slider.noUiSlider.set([null, this.value]);
+    //});
 $(document).ready(function () {
     $('.filter__title').click(function () {
         if ($(this).parent().hasClass('active')) {
@@ -193,5 +215,21 @@ $(document).ready(function () {
             $(this).html('Снять выбор');
             $(this).parent().children().children().addClass('active').children().attr('checked', true);
         }
+    });
+
+    $(".filter__title").each(function(){
+       part2 = $(this);
+        itemsContainer = part2.next().next();
+        $('.filter-item',itemsContainer).each(function(){
+            listItem = $(this);
+
+            if(listItem.hasClass('active'))
+            {
+                part2.addClass("active");
+                part2.parent().addClass("active");
+                listItem.parent().addClass("active");
+                return true;
+            }
+        });
     });
 });
